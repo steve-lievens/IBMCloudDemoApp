@@ -1,0 +1,6 @@
+ curl -X POST "https://containers.cloud.ibm.com/global/v2/storage/createAttachment" -H  "accept: application/json" -H  "Authorization: Bearer " -H  "X-Auth-Resource-Group-ID: ALL" -H  "Content-Type: application/json" -d "{  \"cluster\": \"c09e7pbf0oeupk5r81pg\",  \"volumeID\": \"r010-d3ec40c2-98a0-4b85-a8ee-dc90c6e2abec\",  \"worker\": \"kube-c09e7pbf0oeupk5r81pg-slvpcprivat-small-0000021b\"}"
+
+ curl -X POST "https://containers.cloud.ibm.com/global/v2/storage/createAttachment" -H  "accept: application/json" -H  "Authorization: Bearer " -H  "X-Auth-Resource-Group-ID: ALL" -H  "Content-Type: application/json" -d "{  \"cluster\": \"c09e7pbf0oeupk5r81pg\",  \"volumeID\": \"r010-05f5700b-37ab-44f4-bb43-b263cc6994b1\",  \"worker\": \"kube-c09e7pbf0oeupk5r81pg-slvpcprivat-small-0000011d\"}"
+
+ curl -X POST "https://containers.cloud.ibm.com/global/v2/storage/createAttachment" -H  "accept: application/json" -H  "Authorization: Bearer " -H  "X-Auth-Resource-Group-ID: ALL" -H  "Content-Type: application/json" -d "{  \"cluster\": \"c09e7pbf0oeupk5r81pg\",  \"volumeID\": \"r010-0e18483f-9969-4d1f-938c-5f27ca0eeb85\",  \"worker\": \"kube-c09e7pbf0oeupk5r81pg-slvpcprivat-small-0000030e\"}"
+
