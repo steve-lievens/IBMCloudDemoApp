@@ -1,9 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: mongo-client
+  namespace: icdemo
   labels:
     app: mongo-client
-  name: mongo-client
+    robinapp: icdemo
 spec:
   replicas: 1
   selector:

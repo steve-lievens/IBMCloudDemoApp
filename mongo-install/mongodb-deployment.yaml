@@ -1,9 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app: mongo
   name: mongo
+  namespace: icdemo
+  labels:
+    robinapp: icdemo
+    app: mongo
 spec:
   replicas: 1
   selector:
@@ -14,6 +16,7 @@ spec:
     metadata:
       labels:
         app: mongo
+        robinapp: icdemo
     spec:
       containers:
       - image: mongo
