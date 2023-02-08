@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-config
+  namespace: icdemo
+  labels:
+    robinapp: icdemo
+data:
+  APP_NAME: IBM Cloud Demo App
+  CLIENT_TITLE: Demo App
+  CLIENT_VERSION: 0.5.0
+  WELCOME_IMG: k8s.png
+  WELCOME_MSG: Welcome to IBM Cloud !!!
+  REGION: FRA
+  MONGO_DEMO: "true"
+  MONGO_HOST: mongo-svc
+  MONGO_PORT: "27017"
+  MONGO_USER: adminuser
+  MONGO_PW: password123

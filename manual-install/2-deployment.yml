@@ -1,22 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kabnodejsdemo
+  name: icdemo
+  namespace: icdemo
   labels:
-    app: kabnodejsdemo
+    robinapp: icdemo
+    app: icdemo
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: kabnodejsdemo
+      app: icdemo
   template:
     metadata:
       labels:
-        app: kabnodejsdemo
+        app: icdemo
+        robinapp: icdemo
     spec:
       containers:
-      - name: kabnodejsdemo
-        image: de.icr.io/kabanero/kabnodejsdemo:latest
+      - name: icdemo
+        image: slievens/ibmclouddemo
         ports:
         - containerPort: 8080
         envFrom:
